@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <style>
+            body {
+                background-image: url('https://cdn.pixabay.com/photo/2018/10/28/16/11/volcano-3779159_640.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: white;
+                text-align: center;
+            }
+
+            #app {
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                padding: 20px;
+                max-width: 400px;
+                margin: 100px auto;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            #cityInput {
+                padding: 10px;
+                width: 100%;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+            }
+
+            #fetchWeather {
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            #fetchWeather:hover {
+                background-color: #0056b3;
+            }
+
+            #weatherResult {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Weather App</h1>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="fetchWeather">Get Weather</button>
+            <div id="weatherResult">
+                <!-- Weather data will be displayed here -->
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
